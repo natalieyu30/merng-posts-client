@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from '@ap
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:5000'
+  uri: 'https://obscure-journey-32434.herokuapp.com/'
 });
 
 const authLink = setContext(() => {
